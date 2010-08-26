@@ -1,0 +1,2 @@
+	../src/nautilus-open-terminal.c \
+	../nautilus-open-terminal.schemas.in
