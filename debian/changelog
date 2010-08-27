@@ -1,3 +1,9 @@
+nautilus-edit-with-vim (0.01-1ubuntu7) lucid karmic jaunty hardy; urgency=low
+
+  * Yet another release, this time all series at once
+
+ -- Ken Simon <ken@ninkendo.org>  Fri, 27 Aug 2010 11:12:09 -0400
+
 nautilus-edit-with-vim (0.01-1ubuntu6) lucid; urgency=low
 
   * Dummy changelog entry for lucid
