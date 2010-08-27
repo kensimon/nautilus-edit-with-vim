@@ -35,12 +35,12 @@ static GType type_list[1];
 void
 nautilus_module_initialize (GTypeModule *module)
 {
-	g_print ("Initializing nautilus-open-terminal extension\n");
+	g_print ("Initializing nautilus-edit-with-vim extension\n");
 
-	nautilus_open_terminal_register_type (module);
-	type_list[0] = NAUTILUS_TYPE_OPEN_TERMINAL;
+	nautilus_edit_with_vim_register_type (module);
+	type_list[0] = NAUTILUS_TYPE_EDIT_WITH_VIM;
 
-	bindtextdomain (GETTEXT_PACKAGE, "/usr/share/locale");
+	bindtextdomain (GETTEXT_PACKAGE, GNOMELOCALEDIR);
 	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 
         gconf_client_add_dir(gconf_client_get_default(), 
@@ -52,7 +52,7 @@ nautilus_module_initialize (GTypeModule *module)
 void
 nautilus_module_shutdown (void)
 {
-	g_print ("Shutting down nautilus-open-terminal extension\n");
+	g_print ("Shutting down nautilus-edit-with-vim extension\n");
 }
 
 void 

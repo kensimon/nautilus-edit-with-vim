@@ -74,8 +74,8 @@ LTLIBRARIES = $(nautilus_extension_LTLIBRARIES)
 am__DEPENDENCIES_1 =
 libnautilus_edit_with_vim_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
-am_libnautilus_edit_with_vim_la_OBJECTS = eel-gnome-extensions.lo \
-	nautilus-edit-with-vim.lo edit-with-vim.lo
+am_libnautilus_edit_with_vim_la_OBJECTS = nautilus-edit-with-vim.lo \
+	edit-with-vim.lo
 libnautilus_edit_with_vim_la_OBJECTS =  \
 	$(am_libnautilus_edit_with_vim_la_OBJECTS)
 libnautilus_edit_with_vim_la_LINK = $(LIBTOOL) --tag=CC \
@@ -272,8 +272,6 @@ INCLUDES = \
 nautilus_extensiondir = $(NAUTILUS_EXTENSION_DIR)
 nautilus_extension_LTLIBRARIES = libnautilus-edit-with-vim.la
 libnautilus_edit_with_vim_la_SOURCES = \
-	eel-gnome-extensions.c       \
-	eel-gnome-extensions.h       \
 	nautilus-edit-with-vim.h       \
 	nautilus-edit-with-vim.c       \
 	nautilus-edit-with-vim.h       \
@@ -356,7 +354,6 @@ distclean-compile:
 	-rm -f *.tab.c
 
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/edit-with-vim.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/eel-gnome-extensions.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/nautilus-edit-with-vim.Plo@am__quote@
 
 .c.o:

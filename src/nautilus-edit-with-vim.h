@@ -1,5 +1,5 @@
 /*
- *  nautilus-open-terminal.h
+ *  nautilus-edit-with-vim.h
  * 
  *  Copyright (C) 2004, 2005 Free Software Foundation, Inc.
  *
@@ -21,34 +21,29 @@
  * 
  */
 
-#ifndef NAUTILUS_OPEN_TERMINAL_H
-#define NAUTILUS_OPEN_TERMINAL_H
+#ifndef NAUTILUS_EDIT_WITH_VIM_H
+#define NAUTILUS_EDIT_WITH_VIM_H
 
 #include <glib-object.h>
 
 G_BEGIN_DECLS
 
-/* Declarations for the open terminal extension object.  This object will be
- * instantiated by nautilus.  It implements the GInterfaces 
- * exported by libnautilus. */
+#define NAUTILUS_TYPE_EDIT_WITH_VIM	  (nautilus_edit_with_vim_get_type ())
+#define NAUTILUS_OPEN_TERMINAL(o)	  (G_TYPE_CHECK_INSTANCE_CAST ((o), NAUTILUS_TYPE_EDIT_WITH_VIM, NautilusEditWithVim))
+#define NAUTILUS_IS_EDIT_WITH_VIM(o)	  (G_TYPE_CHECK_INSTANCE_TYPE ((o), NAUTILUS_TYPE_EDIT_WITH_VIM))
+typedef struct _NautilusEditWithVim      NautilusEditWithVim;
+typedef struct _NautilusEditWithVimClass NautilusEditWithVimClass;
 
-
-#define NAUTILUS_TYPE_OPEN_TERMINAL	  (nautilus_open_terminal_get_type ())
-#define NAUTILUS_OPEN_TERMINAL(o)	  (G_TYPE_CHECK_INSTANCE_CAST ((o), NAUTILUS_TYPE_OPEN_TERMINAL, NautilusOpenTerminal))
-#define NAUTILUS_IS_OPEN_TERMINAL(o)	  (G_TYPE_CHECK_INSTANCE_TYPE ((o), NAUTILUS_TYPE_OPEN_TERMINAL))
-typedef struct _NautilusOpenTerminal      NautilusOpenTerminal;
-typedef struct _NautilusOpenTerminalClass NautilusOpenTerminalClass;
-
-struct _NautilusOpenTerminal {
+struct _NautilusEditWithVim {
 	GObject parent_slot;
 };
 
-struct _NautilusOpenTerminalClass {
+struct _NautilusEditWithVimClass {
 	GObjectClass parent_slot;
 };
 
-GType nautilus_open_terminal_get_type      (void);
-void  nautilus_open_terminal_register_type (GTypeModule *module);
+GType nautilus_edit_with_vim_get_type      (void);
+void  nautilus_edit_with_vim_register_type (GTypeModule *module);
 
 G_END_DECLS
 

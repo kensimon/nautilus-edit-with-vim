@@ -16,8 +16,6 @@ nautilus_extensiondir=$(NAUTILUS_EXTENSION_DIR)
 nautilus_extension_LTLIBRARIES=libnautilus-edit-with-vim.la
 
 libnautilus_edit_with_vim_la_SOURCES = \
-	eel-gnome-extensions.c       \
-	eel-gnome-extensions.h       \
 	nautilus-edit-with-vim.h       \
 	nautilus-edit-with-vim.c       \
 	nautilus-edit-with-vim.h       \
