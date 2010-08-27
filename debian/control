@@ -1,0 +1,24 @@
+Source: nautilus-edit-with-vim
+Section: gnome
+Priority: optional
+Maintainer: Ken Simon <ken@ninkendo.org>
+Uploaders: Ken Simon <ken@ninkendo.org>
+Build-Depends: debhelper (>= 7.0.0),
+               cdbs,
+               libnautilus-extension-dev (>= 2.21.2),
+               pkg-config,
+               intltool (>= 0.35),
+               libxml-parser-perl,
+               libgnome-desktop-dev,
+               libgconf2-dev,
+               gnome-pkg-tools (>= 0.7)
+Standards-Version: 3.8.3
+Vcs-Browser: http://git.ninkendo.org/?p=nautilus-edit-with-vim.git;a=summary
+
+Package: nautilus-edit-with-vim
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Nautilus plugin for opening any given file with vim.
+ nautilus-edit-with-vim derives heavily from nautilus-open-terminal,
+ which allows you to open a terminal in arbitrary local folders.
+

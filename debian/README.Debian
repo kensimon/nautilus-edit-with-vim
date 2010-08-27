@@ -1,0 +1,6 @@
+nautilus-edit-with-vim
+----------------------
+
+After installing nautilus-edit-with-vim, you have to
+reload nautilus: run `killall -HUP nautilus' or relaunch
+your GNOME session (logout and login).

@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/gnome.mk
+-include /usr/share/gnome-pkg-tools/1/rules/gnome-get-source.mk
+
+DEB_DH_MAKESHLIBS_ARGS := --no-act
+
+install/nautilus-edit-with-vim::
+	rm -f debian/nautilus-edit-with-vim/$(shell pkg-config --variable=extensiondir libnautilus-extension)/libnautilus-edit-with-vim.la
+	rm -f debian/nautilus-edit-with-vim/$(shell pkg-config --variable=extensiondir libnautilus-extension)/libnautilus-edit-with-vim.a
+ 
