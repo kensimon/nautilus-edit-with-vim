@@ -1,3 +1,9 @@
+nautilus-edit-with-vim (0.01-1ubuntu2) lucid; urgency=low
+
+  * Change debhelper version to 6, will now build on hardy
+
+ -- Ken Simon <ken@ninkendo.org>  Fri, 27 Aug 2010 10:44:14 -0400
+
 nautilus-edit-with-vim (0.01-1ubuntu1) lucid; urgency=low
 
   * Give credit to nautilus-open-terminal author
