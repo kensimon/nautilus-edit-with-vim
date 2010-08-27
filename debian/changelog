@@ -1,3 +1,27 @@
+nautilus-edit-with-vim (0.01-1ubuntu6) lucid; urgency=low
+
+  * Dummy changelog entry for lucid
+
+ -- Ken Simon <ken@ninkendo.org>  Fri, 27 Aug 2010 11:03:51 -0400
+
+nautilus-edit-with-vim (0.01-1ubuntu5) karmic; urgency=low
+
+  * Dummy changelog entry for karmic
+
+ -- Ken Simon <ken@ninkendo.org>  Fri, 27 Aug 2010 11:03:34 -0400
+
+nautilus-edit-with-vim (0.01-1ubuntu4) jaunty; urgency=low
+
+  * Dummy changelog entry for jaunty
+
+ -- Ken Simon <ken@ninkendo.org>  Fri, 27 Aug 2010 11:03:04 -0400
+
+nautilus-edit-with-vim (0.01-1ubuntu3) hardy; urgency=low
+
+  * Dummy changelog entry for hardy
+
+ -- Ken Simon <ken@ninkendo.org>  Fri, 27 Aug 2010 11:01:48 -0400
+
 nautilus-edit-with-vim (0.01-1ubuntu2) lucid; urgency=low
 
   * Change debhelper version to 6, will now build on hardy
