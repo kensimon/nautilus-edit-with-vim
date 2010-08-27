@@ -1,6 +1,6 @@
 nautilus-edit-with-vim (0.01-1ubuntu8~lucid1) lucid; urgency=low
 
-  * Update vcs info for github
+  * Depend on vim-gnome, Update vcs info for github
 
  -- Ken Simon <ken@ninkendo.org>  Fri, 27 Aug 2010 13:33:24 -0400
 
