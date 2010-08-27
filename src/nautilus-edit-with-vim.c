@@ -143,7 +143,6 @@ nautilus_edit_with_vim_get_file_items (NautilusMenuProvider *provider,
 				       GList                *files)
 {
 	GList *items;
-	NautilusMenuItem *item;
 
 	if (g_list_length (files) != 1 ||
 	    nautilus_file_info_is_directory (files->data) ||
