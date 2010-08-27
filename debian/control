@@ -13,7 +13,7 @@ Build-Depends: debhelper (>= 7.0.0),
                libgconf2-dev,
                gnome-pkg-tools (>= 0.7)
 Standards-Version: 3.8.3
-Vcs-Git: git://git.ninkendo.org/nautilus-open-terminal.git
+Vcs-Git: git://git.ninkendo.org/nautilus-edit-with-vim.git
 Vcs-Browser: http://git.ninkendo.org/?p=nautilus-edit-with-vim.git;a=summary
 
 Package: nautilus-edit-with-vim
