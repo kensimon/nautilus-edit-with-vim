@@ -1,3 +1,27 @@
+nautilus-edit-with-vim (0.01-1ubuntu7~lucid1) lucid; urgency=low
+
+  * Build for lucid
+
+ -- Ken Simon <ken@ninkendo.org>  Fri, 27 Aug 2010 11:49:49 -0400
+
+nautilus-edit-with-vim (0.01-1ubuntu7~karmic1) karmic; urgency=low
+
+  * Build for karmic
+
+ -- Ken Simon <ken@ninkendo.org>  Fri, 27 Aug 2010 11:48:47 -0400
+
+nautilus-edit-with-vim (0.01-1ubuntu7~jaunty1) jaunty; urgency=low
+
+  * Build for jaunty
+
+ -- Ken Simon <ken@ninkendo.org>  Fri, 27 Aug 2010 11:48:11 -0400
+
+nautilus-edit-with-vim (0.01-1ubuntu7~hardy1) hardy; urgency=low
+
+  * Build for hardy
+
+ -- Ken Simon <ken@ninkendo.org>  Fri, 27 Aug 2010 11:44:50 -0400
+
 nautilus-edit-with-vim (0.01-1ubuntu6) lucid; urgency=low
 
   * Dummy changelog entry for lucid
