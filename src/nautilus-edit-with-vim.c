@@ -49,32 +49,6 @@ static void nautilus_edit_with_vim_class_init    (NautilusEditWithVimClass *clas
 
 static GType editwithvim_type = 0;
 
-typedef enum {
-	/* local files. Always open "conventionally", i.e. cd and spawn. */
-	FILE_INFO_LOCAL,
-	FILE_INFO_DESKTOP,
-	/* SFTP: Shell terminals are opened "remote" (i.e. with ssh client),
-	 * commands are executed like *_OTHER */
-	FILE_INFO_SFTP,
-	/* OTHER: Terminals and commands are opened by mapping the URI back
-	 * to ~/.gvfs, i.e. to the GVFS FUSE bridge
-	 */
-	FILE_INFO_OTHER
-} EditWithVimFileInfo;
-
-static inline char *
-get_gvfs_path_for_uri (const char *uri)
-{
-	GFile *file;
-	char *path;
-
-	file = g_file_new_for_uri (uri);
-	path = g_file_get_path (file);
-	g_object_unref (file);
-
-	return path;
-}
-
 static void
 edit_with_vim (NautilusMenuItem *item,
 	       NautilusFileInfo *file_info)
